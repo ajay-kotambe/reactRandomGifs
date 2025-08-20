@@ -1,5 +1,6 @@
 import "./App.css";
 import Random from "./components/Random";
+import RandomWithHook from "./components/RandomWithHook";
 import Tag from "./components/Tag";
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="app">
       <h1 className="heading">RANDOM GIFS</h1>
       <div className="gifs-container">
-        <Random />
+        {/* <Random /> */}
+        <RandomWithHook />
         <Tag />
       </div>
     </div>

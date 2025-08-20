@@ -1,0 +1,24 @@
+.random-gif-container {
+  width: 50%;
+
+  background-color: green;
+
+  border-radius: 6px;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 30px 0; */
+  align-items: center;
+  padding: 20px;
+}
+
+.random-gif-container button {
+  width: 75%;
+  background-color: #ffff97;
+  border-radius: 5px;
+  padding: 8px 0;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 600;
+}
