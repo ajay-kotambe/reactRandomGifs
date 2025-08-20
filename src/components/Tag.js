@@ -4,7 +4,6 @@ import Loader from "./Loader";
 
 import useGif from "../hooks/useGif";
 
-
 const Tag = () => {
   const [tag, setTag] = useState("");
   const { gif, loading, fetchData } = useGif(tag);
@@ -28,8 +27,9 @@ const Tag = () => {
   //     setLoading(false);
   //   }
   // }
-
-  const changeHandler = (event) => setTag(event.target.value);
+  const changeHandler = (event) => {
+    setTag(event.target.value);
+  };
 
   // useEffect(() => {
   //   fetchData(); // only once when component mounts
