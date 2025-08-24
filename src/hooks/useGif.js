@@ -7,7 +7,7 @@ const useGif = (tag) => {
   const [gif, setGif] = useState("");
   const [loading, setLoading] = useState(false);
 
-  async function fetchData() {
+  async function fetchData(tag) {
     try {
       setLoading(true);
       const { data } = await axios.get(
@@ -25,6 +25,7 @@ const useGif = (tag) => {
   }
 
   // 👇 removed useEffect (no auto call)
+  
 
   return { gif, loading, fetchData };
 };

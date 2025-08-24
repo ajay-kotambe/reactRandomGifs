@@ -1,10 +1,14 @@
+import { useEffect } from "react";
 import "./App.css";
-import Random from "./components/Random";
 import RandomWithHook from "./components/RandomWithHook";
-import Tag from "./components/Tag";
 import TagWithHook from "./components/TagWithHook";
+import toast from "react-hot-toast";
 
 function App() {
+  useEffect(()=>{
+    toast("Have to click on btns to generate GIFs...!")
+
+  },[])
   return (
     <div className="app">
       <h1 className="heading">RANDOM GIFS</h1>
