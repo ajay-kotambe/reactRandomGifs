@@ -1,10 +1,7 @@
-import { useEffect, useState } from "react";
 import "./Random.css";
-import axios from "axios";
 import Loader from "./Loader";
 import useGif from "../hooks/useGif";
 
-const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 
 const RandomWithHook = () => {
   const { gif, loading, fetchData } = useGif();
