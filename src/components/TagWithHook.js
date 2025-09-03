@@ -20,7 +20,6 @@ const TagWithHook = () => {
       ) : (
         gif && <img src={gif} alt="Random GIF" width={450} height={290} />
       )}
-
       <input
         type="text"
         onChange={(event) => setTag(event.target.value)}
